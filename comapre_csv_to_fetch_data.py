@@ -15,9 +15,8 @@ for key,val in dict2['Name'].items():
         else:
             dict3[val.title()+'_1']=dict1['College'][k].title()
 
-#print(dict1_val_list)
-print(dict3)
-print(len(dict3))
+#print(dict3)
+#print(len(dict3))
 df3=pd.DataFrame(data=dict3,index=[0])
 df3=(df3.T)
 df3.to_excel(r'C:/Users/Salvinanto7/Downloads/cert_details.xlsx')
